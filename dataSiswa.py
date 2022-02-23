@@ -156,7 +156,7 @@ def menu_update():
 
             if (confirmation_update_option == 'Y'):
                 selected_column_updated = input(
-                    "Masukkan nama kolom/keterangan yang ingin di update (Nama/Gender/Kota/Umur): ")
+                    "Masukkan nama kolom/keterangan yang ingin di update (Nama/Gender/Kota/Umur/Program): ")
                 updated_value = input(
                     "Masukkan {} Baru : ".format(selected_column_updated))
                 confirmation_update = input(
