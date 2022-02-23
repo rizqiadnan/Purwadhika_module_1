@@ -1,6 +1,5 @@
 # import modules
 import os
-from turtle import clear
 
 
 def clear_screen():
