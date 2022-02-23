@@ -117,6 +117,7 @@ def menu_add():
                 showAllData()
                 menu_add()
             elif (confirmation_option == 'N'):
+                print("Data tidak tersimpan")
                 menu_add()
             else:
                 confirmation_option_3 = input(
