@@ -6,6 +6,7 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
+# Dictionary Data collection of siswa
 reportSiswa = {
     '12A': {
         'Nama': 'Muhammad Rizqi Adnan Pratama',
@@ -26,7 +27,7 @@ reportSiswa = {
 
 def showAllData():
     for siswaID, siswaInfo in reportSiswa.items():
-        print("\n" + "No. " + siswaID)
+        print("\n" + "NIM. " + siswaID)
         for key in siswaInfo:
             print(key + ':', siswaInfo[key])
 
@@ -101,7 +102,7 @@ def menu_add():
             added_gender = input("Masukkan Gender : ")
             added_city = input("Masukkan Kota : ")
             added_age = input("Masukkan Umur : ")
-            added_program = input("Masukkan Umur : ")
+            added_program = input("Masukkan Program : ")
 
             confirmation_option = input("Apakah Data akan disimpan? (Y/N) : ")
             while ((confirmation_option != 'Y') & (confirmation_option != 'N')):
