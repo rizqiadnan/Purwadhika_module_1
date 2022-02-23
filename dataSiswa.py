@@ -11,13 +11,15 @@ reportSiswa = {
         'Nama': 'Muhammad Rizqi Adnan Pratama',
         'Gender': 'Laki-Laki',
         'Umur': 22,
-        'Kota': 'Jakarta'
+        'Kota': 'Jakarta',
+        'Program': 'JCDS Batch 1'
     },
     '12B': {
         'Nama': 'Rizqillah Zahra Lestari',
         'Gender': 'Perempuan',
         'Umur': 21,
-        'Kota': 'Bekasi'
+        'Kota': 'Bekasi',
+        'Program': 'JCDS Batch 2'
     },
 }
 
@@ -99,6 +101,7 @@ def menu_add():
             added_gender = input("Masukkan Gender : ")
             added_city = input("Masukkan Kota : ")
             added_age = input("Masukkan Umur : ")
+            added_program = input("Masukkan Umur : ")
 
             confirmation_option = input("Apakah Data akan disimpan? (Y/N) : ")
             while ((confirmation_option != 'Y') & (confirmation_option != 'N')):
@@ -111,7 +114,8 @@ def menu_add():
                     'Nama': added_name,
                     'Gender': added_gender,
                     'Kota': added_city,
-                    'Umur': added_age
+                    'Umur': added_age,
+                    'Program': added_program,
                 }
                 print("Data Tersimpan")
                 showAllData()
